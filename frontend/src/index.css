@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat Variable', sans-serif;
+}
+
+nav {
+    animation: nav-blur 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+}
+
+@keyframes nav-blur {
+    to {
+        @apply backdrop-blur bg-slate-500/40;
+    }
+}
